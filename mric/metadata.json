@@ -1,0 +1,15 @@
+{
+  "name": "cbader-mric",
+  "version": "0.1.0",
+  "author": "cbader",
+  "summary": "MRIC Baseline for SNMP, syslogging, OMSA, NTP, etc",
+  "license": "Apache-2.0",
+  "source": "powc-git-02-pv",
+  "project_page": "Chris or Allan",
+  "issues_url": "HelpSTAR",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
