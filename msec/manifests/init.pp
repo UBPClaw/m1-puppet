@@ -42,7 +42,8 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class msec {
+class msec (
+) inherits msec::params {
 
-
+class { '::msec::user': }
 }
