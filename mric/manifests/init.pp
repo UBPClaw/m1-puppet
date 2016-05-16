@@ -14,6 +14,10 @@ class mric (
   $syslog_config     = $mric::params::syslog_config,
 ) inherits mric::params {
   
+<<<<<<< HEAD
+=======
+  include ntp
+>>>>>>> 02dc92c48ec4ae16fc564fadb590c8d6cec4327f
   
   service {'iptables':
     ensure      => stopped,
