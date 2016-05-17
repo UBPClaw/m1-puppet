@@ -24,6 +24,7 @@ class mric (
   class { '::mric::install': } ->
   class { '::mric::omsa': } ~>
   class { '::mric::snmp': } ~>
-  class { '::mric::syslog': } 
+  class { '::mric::syslog': }
+  class { '::mric::ntp': }
   #anchor { 'mric::end': }
 }
