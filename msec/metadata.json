@@ -1,0 +1,15 @@
+{
+  "name": "cbader-msec",
+  "version": "0.1.0",
+  "author": "cbader",
+  "summary": "Create iusr_09 user with home set to /var/nebula and install Java",
+  "license": "Apache-2.0",
+  "source": "powc-git-02-pv/opt/git/puppet.git",
+  "project_page": "Chris",
+  "issues_url": "HelpSTAR",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
