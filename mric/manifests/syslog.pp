@@ -34,16 +34,16 @@ class mric::syslog inherits mric {
   }
 
   file {'/etc/syslog.conf':
-    path          => '/etc/rsyslog.conf',
+    path          => $syslog_file,
     source        => 'puppet:///modules/mric/rsyslog.conf',
     mode          => '600',
     ensure        => present,
   }
 
-   service {'rsyslog':
+   service {'$syslog_daemon':
      ensure       => $service_ensure,
      enable       => $service_enable,
-     name         => 'rsyslog',
+     name         => $syslog_daemon,
      hasstatus    => true,
      hasrestart   => true,
      subscribe    => File['/etc/syslog.conf']

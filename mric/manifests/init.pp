@@ -12,29 +12,10 @@ class mric (
   $snmp_physical     = $mric::params::snmp_physical,
   $snmp_packages     = $mric::params::snmp_packages,
   $syslog_config     = $mric::params::syslog_config,
+  $syslog_file       = $mric::params::syslog_file,
+  $syslog_daemon     = $mric::params::syslog_daemon,
 ) inherits mric::params {
   
-  service {'iptables':
-    ensure      => stopped,
-    enable      => false,
-    hasstatus   => true,
-  }
-
-  service {'ip6tables':
-    ensure      => stopped,
-    enable      => false,
-    hasstatus   => true,
-  }
-  
-  file { '/etc/selinux/config':
-    path            => '/etc/selinux/config',
-    ensure          => file,
-    mode            => '644',
-    owner           => 'root',
-    group           => 'root',
-    source          => $selinux_config,
-   }
-
   # Anchor this as per #8040 - this ensures that classes won't float off and
   # mess everything up.  You can read about this at:
   # http://docs.puppetlabs.com/puppet/2.7/reference/lang_containment.html#known-issues
