@@ -1,0 +1,15 @@
+{
+  "name": "mric-mktg",
+  "version": "0.1.0",
+  "author": "allanadamson",
+  "summary": "Nginx PHP MariaDB for Wordpress Interspire and PHP Knowledgbase",
+  "license": "Apache-2.0",
+  "source": "powc-git-02-pv/opt/git/puppet.git",
+  "project_page": "mric-mktg",
+  "issues_url": "HelpSTAR",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+

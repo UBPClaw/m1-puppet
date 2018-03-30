@@ -1,0 +1,15 @@
+{
+  "name": "cb1779-docker",
+  "version": "0.1.0",
+  "author": "cb1779",
+  "summary": "Installs Docker and configures node as Kubernetes Minion",
+  "license": "Apache-2.0",
+  "source": "powc-git-02-pv:/opt/git/puppet.git",
+  "project_page": "Allan or Chris",
+  "issues_url": "HelpSTAR",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+

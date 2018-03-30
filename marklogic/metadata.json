@@ -1,0 +1,15 @@
+{
+  "name": "cbader-marklogic",
+  "version": "0.1.0",
+  "author": "cbader",
+  "summary": "Prepare server for MarkLogic install",
+  "license": "Apache-2.0",
+  "source": "powc-git-02-pv:/opt/sourcecode/puppet.git",
+  "project_page": null,
+  "issues_url": "HelpSTAR",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
